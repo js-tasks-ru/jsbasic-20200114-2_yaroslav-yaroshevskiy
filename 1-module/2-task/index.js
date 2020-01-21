@@ -1,3 +1,4 @@
+"use strict"
 /**
  * Эту функцию трогать не нужно
  */
@@ -10,6 +11,7 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
+  ( name.length < 4 || name.includes(" ") || name == null ) ? false : true;
 }
 
 function sayHello() {
