@@ -11,8 +11,11 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  let result = (name.length < 4 || name.includes(" ") || name == null || name == undefined) ? false : true;
-  return result
+  let result = (name == undefined || 
+                name == null ||
+                name.includes(" ") ||
+                name.length < 4) ? false : true;
+  return result;
 }
 
 function sayHello() {
